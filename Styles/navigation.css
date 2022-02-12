@@ -1,0 +1,93 @@
+:root {
+    --navigation-button-focus-outline-color: #fff;
+}
+
+.logo {
+    width: 3.5rem;
+}
+
+.left-link {
+    text-decoration: none;
+    color: none;
+    padding-left: 0.5em;
+
+    /* flex-properties */
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.center-container {
+    width: max-content;
+    max-width: 30%;
+
+    /* flex-properties */
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    background-color: #fff;
+    padding: 0.185em;
+    border: 1px solid #000;
+    border-right: none;
+    font-size: 1.5rem !important;
+}
+
+.input {
+    font-size: 1rem;
+    padding: 0.45em 1em;
+    width: 30rem;
+    border: 1px solid #000;
+    max-width: 100%;
+}
+
+.login-button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.3rem;
+    padding: 0.4em 1em;
+}
+
+.login-button:focus {
+    outline: #fff solid 2px;
+}
+
+.login-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 1100px) {
+    .navigation-button-text,
+    .navigation-title {
+        display: none;
+    }
+
+    .login-button {
+        font-size: 1.3rem;
+        padding: 0.3em 0.5em;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .input,
+    .search-icon {
+        display: none;
+    }
+
+    .logo {
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navigation-button {
+        display: block !important;
+    }
+
+    .navigation-right-buttons-container {
+        gap: 0.3em;
+    }
+}
