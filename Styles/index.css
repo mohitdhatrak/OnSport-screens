@@ -89,19 +89,3 @@
     margin-top: 0.8em;
     width: 14rem;
 }
-
-.footer-container {
-    background-color: var(--primary-color);
-    padding: 2em 4em;
-    margin-top: 3em;
-    text-align: center;
-}
-
-.social-icons {
-    background-color: var(--primary-color);
-    width: 2rem;
-}
-
-.social-container a {
-    margin: 0 1em;
-}
