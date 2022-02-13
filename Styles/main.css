@@ -6,9 +6,10 @@
 /* spark-ui component library imports */
 @import url("https://spark-ui.netlify.app/Components/Navigation/navigation.css");
 @import url("https://spark-ui.netlify.app/Components/Image/image.css");
-@import url("https://spark-ui.netlify.app/Components/Card/card.css");
 @import url("https://spark-ui.netlify.app/Components/Button/button.css");
 @import url("https://spark-ui.netlify.app/Components/Badge/badge.css");
+@import url("https://spark-ui.netlify.app/Components/Card/card.css");
+@import url("https://spark-ui.netlify.app/Components/Modal/modal.css");
 
 /* common css to all pages */
 @import url("/Styles/navigation.css");
