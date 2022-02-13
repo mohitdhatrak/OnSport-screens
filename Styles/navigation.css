@@ -1,5 +1,6 @@
 :root {
     /* spark-ui css variables control */
+
     /* secondary-button */
     --secondary-button-focus-outline-color: #fff;
     --secondary-button-bg-color: var(--secondary-color);
@@ -47,7 +48,7 @@
     font-size: 1.5rem !important;
 }
 
-.input {
+.search-input {
     font-size: 1rem;
     padding: 0.45em 1em;
     width: 30rem;
@@ -96,10 +97,6 @@
     border-radius: 0.2em;
 }
 
-.badge-button:focus {
-    outline: var() solid 2px;
-}
-
 .badge-badge2 {
     font-size: 1rem;
     font-weight: 500;
@@ -127,7 +124,7 @@
 }
 
 @media screen and (max-width: 610px) {
-    .input,
+    .search-input,
     .search-icon {
         display: none;
     }

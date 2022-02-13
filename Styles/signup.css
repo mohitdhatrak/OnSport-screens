@@ -15,6 +15,7 @@
 }
 
 .container-center {
+    margin-top: 2.5em;
     height: 80vh;
 
     /* flex properties */
@@ -57,7 +58,7 @@
     margin-right: auto;
 }
 
-.login-buttons-container {
+.signup-buttons-container {
     /* flex properties */
     display: flex;
     flex-direction: column;
