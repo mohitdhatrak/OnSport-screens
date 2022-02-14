@@ -1,0 +1,91 @@
+:root {
+    --responsive-image-width: 100vw;
+}
+
+.main-banner {
+    position: relative;
+}
+
+.image-container {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    height: 60vh;
+    max-width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.overlay-text-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* rgba helped get the background opacity changed to 0.75, opacity property changed opacity of children too */
+    background-color: rgba(54, 54, 54, 0.75);
+    color: #fff;
+
+    /* flex-properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-text {
+    text-align: center;
+    width: 50rem;
+    max-width: 90%;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.overlay-button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.3em 0.6em;
+    font-size: 1.8rem;
+}
+
+.overlay-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.clickable-card {
+    margin: 2em auto;
+    width: 50rem;
+    max-width: 90vw;
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 0.3em;
+}
+
+.card-image-header-container {
+    width: 100%;
+}
+
+.card-body .card-image {
+    border-radius: 0.3em 0 0 0.3em;
+    height: 15em;
+    width: 60%;
+    object-fit: cover;
+}
+
+.card-heading {
+    margin-top: 0.8em;
+}
+
+.card-body .card-text {
+    display: block;
+    margin-top: 0.8em;
+    width: 14rem;
+}
