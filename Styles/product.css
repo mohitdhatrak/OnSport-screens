@@ -1,0 +1,146 @@
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* left side filter section */
+
+:root {
+    /* rating stars css variables */
+    --rating-filled-icon-color: #000;
+    --rating-filled-icon-size: 1rem;
+    --rating-filled-icon-hover-color: none;
+    --rating-filled-gap-between: 1rem;
+}
+
+.main-container {
+    /* flex properties */
+    display: flex;
+}
+
+.side-drawer {
+    width: max-content;
+    margin: 3.5em 3em;
+    /* border-right: 1px solid #000; */
+}
+
+.filter-container {
+    width: 16rem;
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+}
+
+.header-partition {
+    border: 0.5px solid #000;
+    border-radius: 0.2em;
+    padding: 1em;
+
+    /* flex properties */
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    /* flex properties */
+    display: flex;
+    gap: 1em;
+}
+
+.heading {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.clear-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.filter-partition {
+    border: 0.5px solid #000;
+    border-radius: 0.2em;
+    padding: 1em;
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.sub-heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.input-checkbox {
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox-label {
+    cursor: pointer;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.rating-text {
+    padding-left: 0.4em;
+}
+
+.rating-svg-icons {
+    cursor: unset;
+}
+
+/* right side main content section */
+
+.main-content {
+    width: 100%;
+    margin: 3em 3em;
+}
+
+.sort-container {
+    /* flex properties */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sort-options {
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 0.2em;
+    padding: 0.3em 0.6em;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item {
+    padding-left: 1em;
+    padding-right: 2.6em;
+}
+
+.dropdown-icon {
+    cursor: pointer;
+}
