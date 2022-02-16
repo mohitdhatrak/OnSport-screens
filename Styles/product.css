@@ -122,7 +122,7 @@ button {
     --card-secondary-button-border-radius: 0.5em;
     --card-button-hover-color: #7dd3fc;
     --card-icon-size: 1.3rem;
-    --card-badge-bg-color: #bae6fd;
+    --card-badge-bg-color: var(--primary-color);
     --card-badge-border: 1px solid #000;
     --card-badge-border-radius: 0.5em;
 }
