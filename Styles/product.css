@@ -1,0 +1,273 @@
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* left side filter section */
+
+:root {
+    /* rating stars css variables */
+    --rating-filled-icon-color: #000;
+    --rating-filled-icon-size: 1rem;
+    --rating-filled-icon-hover-color: none;
+    --rating-filled-gap-between: 1rem;
+}
+
+.main-container {
+    /* flex properties */
+    display: flex;
+}
+
+.side-drawer {
+    width: max-content;
+    margin: 3.5em 2em;
+    margin-right: 0rem;
+}
+
+.filter-container {
+    width: 16rem;
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+}
+
+.header-partition {
+    border: 0.5px solid #000;
+    border-radius: 0.3em;
+    padding: 1em;
+
+    /* flex properties */
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    /* flex properties */
+    display: flex;
+    gap: 1em;
+}
+
+.heading {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.clear-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.filter-partition {
+    border: 0.5px solid #000;
+    border-radius: 0.3em;
+    padding: 1em;
+
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.sub-heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.input-checkbox {
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox-label {
+    cursor: pointer;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.rating-text {
+    padding-left: 0.4em;
+}
+
+.rating-svg-icons {
+    cursor: unset;
+}
+
+/* right side main content section */
+
+:root {
+    --card-hover-box-shadow: 0px 0px 20px 1px #e3dddd;
+    --card-border-radius: 0.5em;
+    --card-primary-button-border-radius: 0.5em;
+    --card-secondary-button-bg-color: none;
+    --card-secondary-button-border-radius: 0.5em;
+    --card-button-hover-color: #7dd3fc;
+    --card-icon-size: 1.3rem;
+    --card-badge-bg-color: #bae6fd;
+    --card-badge-border: 1px solid #000;
+    --card-badge-border-radius: 0.5em;
+}
+
+.main-content {
+    width: 100%;
+    margin: 3em 2em;
+}
+
+.sort-container {
+    /* flex properties */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sort-options {
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 0.2em;
+    padding: 0.3em 0.6em;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item {
+    padding-left: 1em;
+    padding-right: 2.6em;
+}
+
+.dropdown-icon {
+    cursor: pointer;
+}
+
+.card-container {
+    padding: 0;
+    margin-top: 2em;
+
+    /* grid properties */
+    display: grid;
+    grid-row: auto;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, 12rem);
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1120px) {
+    .side-drawer {
+        margin-left: 1.5em;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .side-drawer,
+    .sort-container {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0em 2em;
+        margin-bottom: 5rem;
+    }
+}
+
+.card-item {
+    cursor: pointer;
+}
+
+.card-heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-subheading {
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+}
+
+.card-with-badge .card-image-header-container .card-button {
+    top: 0.4em;
+    right: 0.4em;
+}
+
+.card-badge {
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.card-with-badge .card-footer .card-button {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-container {
+    display: none;
+}
+
+@media screen and (max-width: 785px) {
+    .footer-container {
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+.small-screen-footer {
+    background-color: var(--primary-color);
+    width: 100vw;
+
+    /* flex properties */
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-buttons {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.vertical-line {
+    border-left: 2px solid #000;
+    height: 4rem;
+}
+
+@media screen and (max-width: 500px) {
+    .main-content {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+
+    .card-container {
+        grid-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, 10.5rem);
+    }
+}

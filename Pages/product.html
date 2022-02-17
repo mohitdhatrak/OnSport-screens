@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OnSport | Products</title>
+        <meta name="author" content="Mohit Dhatrak" />
+        <meta name="title" content="OnSport Products page" />
+        <meta
+            name="description"
+            content="Products page of OnSport, online sports merchandise website. You can search for items you wish to buy, process made easier by giving various filter options"
+        />
+        <meta name="keywords" content="HTML, CSS, JavaScript, React, OnSport" />
+        <link rel="stylesheet" href="/Styles/main.css" />
+        <link rel="stylesheet" href="/Styles/product.css" />
+        <link
+            rel="shortcut icon"
+            href="/Images/website-favicon.png"
+            type="image/png"
+        />
+    </head>
+    <body>
+        <nav
+            aria-label="Top navigation"
+            class="navigation navigation-fixed navigation-standard"
+        >
+            <div class="navigation-left-container">
+                <a href="/index.html" class="left-link">
+                    <img
+                        src="/Images/website-logo.png"
+                        alt="Website logo"
+                        class="logo"
+                    />
+                    <h3 class="navigation-title">OnSport</h3>
+                </a>
+            </div>
+            <div class="center-container">
+                <button class="material-icons search-icon">search</button>
+                <input
+                    type="search"
+                    placeholder="Search"
+                    name=""
+                    id=""
+                    class="search-input"
+                />
+            </div>
+            <div class="navigation-right-buttons-container">
+                <button class="navigation-button">
+                    <i class="material-icons navigation-svg-icons"
+                        >favorite_border</i
+                    >
+                    <span class="navigation-button-text">Wishlist</span>
+                </button>
+                <div class="button-with-badge badge-medium">
+                    <button class="badge-button">
+                        <i class="material-icons-outlined navigation-svg-icons"
+                            >shopping_cart</i
+                        >
+                        <span class="navigation-button-text">Cart</span>
+                    </button>
+                    <div class="badge-badge2">2</div>
+                </div>
+                <button class="button button-secondary">Login</button>
+            </div>
+        </nav>
+
+        <main class="main-container">
+            <section class="side-drawer">
+                <aside aria-label="Filter options" class="filter-container">
+                    <ul class="header-partition">
+                        <li class="list-item">
+                            <h3 class="heading">Filters</h3>
+                        </li>
+                        <li class="list-item">
+                            <button class="clear-button">Clear All</button>
+                        </li>
+                    </ul>
+                    <ul class="filter-partition">
+                        <li class="list-item">
+                            <h3 class="sub-heading">Sport</h3>
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Athletics"
+                                id="athletics"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="athletics"
+                                >Athletics</label
+                            >
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Basketball"
+                                id="basketball"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="basketball"
+                                >Basketball</label
+                            >
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Boxing"
+                                id="boxing"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="boxing"
+                                >Boxing</label
+                            >
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Cricket"
+                                id="cricket"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="cricket"
+                                >Cricket</label
+                            >
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Hockey"
+                                id="hockey"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="hockey"
+                                >Hockey</label
+                            >
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Football"
+                                id="football"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="football"
+                                >Football</label
+                            >
+                        </li>
+                    </ul>
+                    <ul class="filter-partition">
+                        <li class="list-item">
+                            <h3 class="sub-heading">Category</h3>
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Equipment"
+                                id="equipment"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="equipment"
+                                >Equipment</label
+                            >
+                        </li>
+                        <li class="list-item">
+                            <input
+                                type="checkbox"
+                                name="Apparel"
+                                id="apparel"
+                                class="input-checkbox"
+                            />
+                            <label class="checkbox-label" for="apparel"
+                                >Apparel</label
+                            >
+                        </li>
+                    </ul>
+                    <ul class="filter-partition">
+                        <li class="list-item">
+                            <h3 class="sub-heading">Rating</h3>
+                        </li>
+                        <li class="list-item">
+                            <div class="rating rating-filled">
+                                <input
+                                    type="checkbox"
+                                    name="rating5"
+                                    id="rating5"
+                                    class="input-checkbox"
+                                />
+                                <label for="rating5" class="checkbox-label">
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <span class="rating-text">only</span></label
+                                >
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="rating rating-filled">
+                                <input
+                                    type="checkbox"
+                                    name="rating4+"
+                                    id="rating4Plus"
+                                    class="input-checkbox"
+                                />
+                                <label for="rating4Plus" class="checkbox-label">
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <span class="rating-text"
+                                        >& above</span
+                                    ></label
+                                >
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="rating rating-filled">
+                                <input
+                                    type="checkbox"
+                                    name="rating3+"
+                                    id="rating3Plus"
+                                    class="input-checkbox"
+                                />
+                                <label for="rating3Plus" class="checkbox-label">
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <span class="rating-text">
+                                        & above</span
+                                    ></label
+                                >
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="rating rating-filled">
+                                <input
+                                    type="checkbox"
+                                    name="rating2+"
+                                    id="rating2Plus"
+                                    class="input-checkbox"
+                                />
+                                <label for="rating2Plus" class="checkbox-label">
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <span class="rating-text"> & above</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="rating rating-filled">
+                                <input
+                                    type="checkbox"
+                                    name="rating1+"
+                                    id="rating1Plus"
+                                    class="input-checkbox"
+                                />
+                                <label for="rating1Plus" class="checkbox-label">
+                                    <i class="material-icons rating-svg-icons"
+                                        >star</i
+                                    >
+                                    <span class="rating-text"> & above</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="main-content">
+                <div class="sort-container">
+                    <ul class="sort-options">
+                        <li>Sort by :</li>
+                        <li class="dropdown-item"><b>Price: Low to High</b></li>
+                        <button>
+                            <i class="material-icons dropdown-icon"
+                                >arrow_drop_down</i
+                            >
+                        </button>
+                    </ul>
+                </div>
+
+                <ul class="card-container">
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <div class="card card-vertical card-with-badge">
+                            <div class="card-body">
+                                <div class="card-image-header-container">
+                                    <img
+                                        src="/Images/boxing-bag.jpg"
+                                        alt="Boxing Bag"
+                                        class="card-image"
+                                    />
+                                    <span class="card-badge">Bestseller</span>
+                                    <div
+                                        class="card-secondary-buttons-container"
+                                    >
+                                        <button class="card-button">
+                                            <i
+                                                class="material-icons card-svg-icons"
+                                            >
+                                                favorite_border
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <header class="card-header-container">
+                                        <h1 class="card-heading">Boxing Bag</h1>
+                                        <p class="card-subheading">
+                                            50 Kg classic boxing bag, best
+                                            suited for beginners as well as
+                                            professionals!
+                                        </p>
+                                    </header>
+                                </div>
+                                <p class="card-text">
+                                    <span>₹1200</span>
+                                    <small>(40% off)</small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-primary-buttons-container">
+                                    <button class="card-button">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="footer-container">
+                <div class="small-screen-footer">
+                    <button class="footer-buttons">
+                        <i class="material-icons">filter_alt</i>
+                        <span>Filter</span>
+                    </button>
+                    <button class="footer-buttons">
+                        <i class="material-icons">sort</i>
+                        <span>Sort</span>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
