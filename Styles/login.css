@@ -1,0 +1,99 @@
+:root {
+    /* spark-ui css variables control */
+
+    /* primary-button */
+    --primary-button-bg-color: var(--secondary-color);
+    --primary-button-border-radius: 0.3em;
+    /* input textbox */
+    --input-border: 2px solid #808080;
+    --input-border-radius: 0.4em;
+    --input-width: 20rem;
+    /* primary-link */
+    --primary-link-bg-color: transparent;
+    --primary-link-color: var(--secondary-color);
+    --primary-link-border-radius: 0;
+}
+
+.container-center {
+    height: 80vh;
+
+    /* flex properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25rem;
+    max-width: 90%;
+}
+
+.card {
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.title {
+    margin: 0;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.input {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.input-label {
+    width: 20rem;
+    display: block;
+    margin-left: 1.35rem;
+    margin-right: auto;
+}
+
+.login-buttons-container {
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button.button-primary:hover {
+    background-color: var(--button-hover-color);
+}
+
+.login-signup-button {
+    font-size: 1.3rem;
+}
+
+.option-text {
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.6em;
+    text-transform: uppercase;
+}
+
+.link.link-primary {
+    font-size: 1rem;
+    display: inline;
+    padding: 0;
+}
+
+.link.link-primary:hover {
+    color: var(--button-hover-color);
+    text-decoration: underline;
+}
+
+.link.link-primary:focus {
+    outline-width: 1px;
+}
+
+.redirect-link {
+    margin-top: 1em;
+}
