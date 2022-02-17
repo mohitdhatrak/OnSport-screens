@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>OnSport | Products</title>
         <meta name="author" content="Mohit Dhatrak" />
-        <meta name="title" content="OnSport Products page" />
+        <meta name="title" content="OnSport products page" />
         <meta
             name="description"
             content="Products page of OnSport, online sports merchandise website. You can search for items you wish to buy, process made easier by giving various filter options"
         />
         <meta name="keywords" content="HTML, CSS, JavaScript, React, OnSport" />
         <link rel="stylesheet" href="/Styles/main.css" />
-        <link rel="stylesheet" href="/Styles/product.css" />
+        <link rel="stylesheet" href="/Styles/product-list.css" />
         <link
             rel="shortcut icon"
             href="/Images/website-favicon.png"
@@ -46,22 +46,31 @@
                 />
             </div>
             <div class="navigation-right-buttons-container">
-                <button class="navigation-button">
-                    <i class="material-icons navigation-svg-icons"
-                        >favorite_border</i
-                    >
-                    <span class="navigation-button-text">Wishlist</span>
-                </button>
-                <div class="button-with-badge badge-medium">
-                    <button class="badge-button">
-                        <i class="material-icons-outlined navigation-svg-icons"
-                            >shopping_cart</i
+                <a href="/Pages/wishlist.html">
+                    <button class="navigation-button">
+                        <i class="material-icons navigation-svg-icons"
+                            >favorite_border</i
                         >
-                        <span class="navigation-button-text">Cart</span>
+                        <span class="navigation-button-text">Wishlist</span>
                     </button>
-                    <div class="badge-badge2">2</div>
-                </div>
-                <button class="button button-secondary">Login</button>
+                </a>
+                <a href="/Pages/cart.html">
+                    <div class="button-with-badge badge-medium">
+                        <button class="badge-button">
+                            <i
+                                class="material-icons-outlined navigation-svg-icons"
+                                >shopping_cart</i
+                            >
+                            <span class="navigation-button-text">Cart</span>
+                        </button>
+                        <div class="badge-badge2">2</div>
+                    </div>
+                </a>
+                <button class="button button-secondary">
+                    <a href="/Pages/login.html" class="login-signup-link"
+                        >Login</a
+                    >
+                </button>
             </div>
         </nav>
 
@@ -181,36 +190,8 @@
                         <li class="list-item">
                             <div class="rating rating-filled">
                                 <input
-                                    type="checkbox"
-                                    name="rating5"
-                                    id="rating5"
-                                    class="input-checkbox"
-                                />
-                                <label for="rating5" class="checkbox-label">
-                                    <i class="material-icons rating-svg-icons"
-                                        >star</i
-                                    >
-                                    <i class="material-icons rating-svg-icons"
-                                        >star</i
-                                    >
-                                    <i class="material-icons rating-svg-icons"
-                                        >star</i
-                                    >
-                                    <i class="material-icons rating-svg-icons"
-                                        >star</i
-                                    >
-                                    <i class="material-icons rating-svg-icons"
-                                        >star</i
-                                    >
-                                    <span class="rating-text">only</span></label
-                                >
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <div class="rating rating-filled">
-                                <input
-                                    type="checkbox"
-                                    name="rating4+"
+                                    type="radio"
+                                    name="rating"
                                     id="rating4Plus"
                                     class="input-checkbox"
                                 />
@@ -236,8 +217,8 @@
                         <li class="list-item">
                             <div class="rating rating-filled">
                                 <input
-                                    type="checkbox"
-                                    name="rating3+"
+                                    type="radio"
+                                    name="rating"
                                     id="rating3Plus"
                                     class="input-checkbox"
                                 />
@@ -260,8 +241,8 @@
                         <li class="list-item">
                             <div class="rating rating-filled">
                                 <input
-                                    type="checkbox"
-                                    name="rating2+"
+                                    type="radio"
+                                    name="rating"
                                     id="rating2Plus"
                                     class="input-checkbox"
                                 />
@@ -279,8 +260,8 @@
                         <li class="list-item">
                             <div class="rating rating-filled">
                                 <input
-                                    type="checkbox"
-                                    name="rating1+"
+                                    type="radio"
+                                    name="rating"
                                     id="rating1Plus"
                                     class="input-checkbox"
                                 />
@@ -348,7 +329,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -393,7 +379,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -438,7 +429,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -483,7 +479,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -528,7 +529,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -573,7 +579,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -618,7 +629,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -663,7 +679,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -708,7 +729,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -753,7 +779,12 @@
                             <div class="card-footer">
                                 <div class="card-primary-buttons-container">
                                     <button class="card-button">
-                                        Add to cart
+                                        <a
+                                            href="/Pages/login.html"
+                                            class="add-cart-link"
+                                        >
+                                            Add to cart
+                                        </a>
                                     </button>
                                 </div>
                             </div>
@@ -765,11 +796,11 @@
             <footer class="footer-container">
                 <div class="small-screen-footer">
                     <button class="footer-buttons">
-                        <i class="material-icons">filter_alt</i>
+                        <i class="material-icons footer-icons">filter_alt</i>
                         <span>Filter</span>
                     </button>
                     <button class="footer-buttons">
-                        <i class="material-icons">sort</i>
+                        <i class="material-icons footer-icons">sort</i>
                         <span>Sort</span>
                     </button>
                 </div>
