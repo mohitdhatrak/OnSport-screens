@@ -12,6 +12,15 @@
     --button-badge-border: none;
     --badge2-bg-color: #dd1313;
     --badge2-border: none;
+    /* warn-button */
+    --warn-button-bg-color: transparent;
+    --warn-button-border: 1px solid #000;
+    --warn-button-border-radius: 0.3em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 .logo {
@@ -71,12 +80,23 @@
 
 .navigation .button.button-secondary {
     font-size: 1.3rem;
-    padding: 0.4em 0.4em;
+    padding: 0.4em 0;
     margin-left: 0.8em;
 }
 
 .button.button-secondary:hover {
     background-color: var(--button-hover-color);
+}
+
+.navigation .button.button-warn {
+    font-size: 1.3rem;
+    padding: 0.4em 0;
+    margin-left: 0.8em;
+}
+
+.button.button-warn:hover {
+    text-decoration: underline;
+    text-decoration-color: #b91c1c;
 }
 
 .badge-button {
@@ -104,6 +124,14 @@
     height: 1.5rem;
     right: 4%;
     top: -10%;
+}
+
+.login-signup-link {
+    padding: 0.4em 0.6em;
+}
+
+.button.button-warn .login-signup-link {
+    color: #b91c1c;
 }
 
 @media screen and (max-width: 1100px) {
