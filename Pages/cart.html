@@ -46,71 +46,359 @@
                 />
             </div>
             <div class="navigation-right-buttons-container">
-                <button class="navigation-button">
-                    <i class="material-icons navigation-svg-icons"
-                        >favorite_border</i
-                    >
-                    <span class="navigation-button-text">Wishlist</span>
+                <a href="/Pages/wishlist.html">
+                    <button class="navigation-button">
+                        <i class="material-icons navigation-svg-icons"
+                            >favorite_border</i
+                        >
+                        <span class="navigation-button-text">Wishlist</span>
+                    </button>
+                </a>
+                <button class="button button-warn">
+                    <a href="/index.html" class="login-signup-link">Logout</a>
                 </button>
-                <button class="button button-secondary">Login</button>
             </div>
         </nav>
 
-        <main>
+        <main class="grid-container">
             <h2 class="cart-heading">My Cart (2)</h2>
 
-            <section>
-                <ul>
-                    <li>
-                        <div class="card card-horizontal card-basic">
-                            <div class="card-body">
-                                <div class="card-image-header-container">
-                                    <img src="" alt="" class="card-image" />
-                                    <header class="card-header-container">
-                                        <h1 class="card-heading">
-                                            Tokyo Olympics 2020
-                                        </h1>
-                                        <p class="card-subheading">
-                                            by Mohit Dhatrak
-                                        </p>
-                                    </header>
-                                </div>
-                                <p class="card-text">The Tokyo 2020...</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-primary-buttons-container">
-                                    <button class="card-button">Read</button>
-                                    <button class="card-button">
-                                        Bookmark
-                                    </button>
-                                </div>
-                                <div class="card-secondary-buttons-container">
-                                    <button class="card-button">
-                                        <i
-                                            class="material-icons card-svg-icons"
+            <ul class="cart-container">
+                <li class="card-item">
+                    <div class="card card-horizontal card-basic">
+                        <div class="card-body">
+                            <div class="card-image-header-container">
+                                <img
+                                    src="/Images/boxing-bag.jpg"
+                                    alt="Boxing bag"
+                                    class="card-image"
+                                />
+                                <header class="card-header-container">
+                                    <h1 class="card-heading">Boxing bag</h1>
+                                    <p class="card-subheading">
+                                        <small>Sold by: UpSport</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span class="discount-price"
+                                            >₹1199</span
                                         >
-                                            favorite_border
-                                        </i>
-                                    </button>
-                                    <button class="card-button">
-                                        <i
-                                            class="material-icons card-svg-icons"
-                                        >
-                                            share
-                                        </i>
-                                    </button>
-                                    <button class="card-button">
-                                        <i
-                                            class="material-icons card-svg-icons"
-                                        >
-                                            more_vert
-                                        </i>
-                                    </button>
-                                </div>
+                                        <small class="mrp">₹1799</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Rating:</span>
+                                        <span class="rating rating-outline">
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                        </span>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Quantity: </span
+                                        ><button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                remove_circle_outline
+                                            </i>
+                                        </button>
+                                        <span class="quantity-display">2</span>
+                                        <button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                control_point
+                                            </i>
+                                        </button>
+                                    </p>
+                                </header>
                             </div>
                         </div>
-                    </li>
-                </ul>
+                        <div class="card-footer">
+                            <div class="card-primary-buttons-container">
+                                <button class="card-button">Remove</button>
+                                <button class="card-button">
+                                    Move to wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card card-horizontal card-basic">
+                        <div class="card-body">
+                            <div class="card-image-header-container">
+                                <img
+                                    src="/Images/boxing-bag.jpg"
+                                    alt="Boxing bag"
+                                    class="card-image"
+                                />
+                                <header class="card-header-container">
+                                    <h1 class="card-heading">Boxing bag</h1>
+                                    <p class="card-subheading">
+                                        <small>Sold by: UpSport</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span class="discount-price"
+                                            >₹1199</span
+                                        >
+                                        <small class="mrp">₹1799</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Rating:</span>
+                                        <span class="rating rating-outline">
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                        </span>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Quantity: </span
+                                        ><button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                remove_circle_outline
+                                            </i>
+                                        </button>
+                                        <span class="quantity-display">2</span>
+                                        <button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                control_point
+                                            </i>
+                                        </button>
+                                    </p>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-primary-buttons-container">
+                                <button class="card-button">Remove</button>
+                                <button class="card-button">
+                                    Move to wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card card-horizontal card-basic">
+                        <div class="card-body">
+                            <div class="card-image-header-container">
+                                <img
+                                    src="/Images/boxing-bag.jpg"
+                                    alt="Boxing bag"
+                                    class="card-image"
+                                />
+                                <header class="card-header-container">
+                                    <h1 class="card-heading">Boxing bag</h1>
+                                    <p class="card-subheading">
+                                        <small>Sold by: UpSport</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span class="discount-price"
+                                            >₹1199</span
+                                        >
+                                        <small class="mrp">₹1799</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Rating:</span>
+                                        <span class="rating rating-outline">
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                        </span>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Quantity: </span
+                                        ><button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                remove_circle_outline
+                                            </i>
+                                        </button>
+                                        <span class="quantity-display">2</span>
+                                        <button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                control_point
+                                            </i>
+                                        </button>
+                                    </p>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-primary-buttons-container">
+                                <button class="card-button">Remove</button>
+                                <button class="card-button">
+                                    Move to wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card card-horizontal card-basic">
+                        <div class="card-body">
+                            <div class="card-image-header-container">
+                                <img
+                                    src="/Images/boxing-bag.jpg"
+                                    alt="Boxing bag"
+                                    class="card-image"
+                                />
+                                <header class="card-header-container">
+                                    <h1 class="card-heading">Boxing bag</h1>
+                                    <p class="card-subheading">
+                                        <small>Sold by: UpSport</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span class="discount-price"
+                                            >₹1199</span
+                                        >
+                                        <small class="mrp">₹1799</small>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Rating:</span>
+                                        <span class="rating rating-outline">
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                            <i
+                                                class="material-icons rating-svg-icons"
+                                                >star_border</i
+                                            >
+                                        </span>
+                                    </p>
+                                    <p class="card-subheading">
+                                        <span>Quantity: </span
+                                        ><button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                remove_circle_outline
+                                            </i>
+                                        </button>
+                                        <span class="quantity-display">2</span>
+                                        <button class="quantity-button">
+                                            <i
+                                                class="material-icons quantity-icons"
+                                            >
+                                                control_point
+                                            </i>
+                                        </button>
+                                    </p>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-primary-buttons-container">
+                                <button class="card-button">Remove</button>
+                                <button class="card-button">
+                                    Move to wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <section class="price-modal">
+                <div class="modal confirmation-modal">
+                    <h2 class="modal-title">Cart details (2 items)</h2>
+                    <div class="modal-body">
+                        <div class="money-details">
+                            <span class="modal-text">Total MRP:</span>
+                            <span>₹3598</span>
+                        </div>
+                        <div class="money-details">
+                            <span class="modal-text">Total discount:</span>
+                            <span class="highlight-item">- ₹1200</span>
+                        </div>
+                        <div class="money-details">
+                            <span class="modal-text">Delivery charge:</span>
+                            <span class="highlight-item">Free</span>
+                        </div>
+                        <hr class="divider-line"" />
+                        <div class="money-details total-amount">
+                            <span class="modal-text">Total amount:</span>
+                            <span>₹2398</span>
+                        </div>
+                    </div>
+                    <div class="modal-buttons-container">
+                        <button class="modal-button">Place order</button>
+                    </div>
+                </div>
             </section>
         </main>
     </body>

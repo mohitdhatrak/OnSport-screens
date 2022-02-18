@@ -1,6 +1,6 @@
 /* change in nav bar */
 
-.navigation .button.button-secondary {
+.navigation .button.button-warn {
     margin: 0;
 }
 
@@ -9,11 +9,29 @@
 :root {
     /* spark-ui css variables control */
 
-    --card-hover-box-shadow: 0px 0px 20px 1px #e3dddd;
+    --card-hover-box-shadow: none;
+    --card-border-radius: 0.3em;
+    /* rating stars css variables */
+    --rating-outline-icon-color: #808080;
+    --rating-outline-icon-size: 1.2rem;
+    --rating-outline-icon-hover-color: #808080;
+    --rating-outline-gap-between: 0;
+    /* confirmation modal css variables */
+    --modal-width: 25rem;
+    --modal-bg-color: none;
+    --modal-border: 1px solid #000;
+    --modal-border-radius: 0.3em;
+    --modal-text-color: #000;
+    --modal-text-hover-color: #7dd3fc;
+    --modal-text-hover-border-radius: 0.3em;
+    --confirmation-modal-height: max-content;
+    --confirmation-modal-divider-border: 1px solid #000;
+    --modal-text-focus-outline-color: #000;
 }
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 li {
@@ -24,11 +42,228 @@ button {
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
+}
+
+.grid-container {
+    /* grid properties */
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-areas:
+        "nav nav"
+        "cart-content price-dialog";
+    grid-column-gap: 1em;
 }
 
 .cart-heading {
-    margin-bottom: 0;
-    margin-top: 1.5em;
+    grid-area: nav;
+    margin: 1.5em auto;
     text-align: center;
     text-transform: uppercase;
+}
+
+.cart-container {
+    grid-area: cart-content;
+    margin-bottom: 2em;
+
+    /* grid properties */
+    display: grid;
+    justify-content: stretch;
+    grid-row-gap: 1em;
+}
+
+.card-item {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 40em;
+}
+
+.card {
+    gap: 0.5em;
+}
+
+.card-horizontal .card-image {
+    width: 8rem;
+    border-radius: 0.3em;
+    margin: 0.5em;
+    margin-bottom: 0;
+    margin-right: 0;
+    border: 1px solid #808080;
+}
+
+.card-horizontal .card-header-container {
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.card-horizontal .card-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 1.2rem;
+}
+
+.card-horizontal .card-subheading {
+    margin: 0;
+    padding: 0 1.2rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.discount-price {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.rating-svg-icons {
+    cursor: default;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.quantity-display {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 2px solid #808080;
+    border-radius: 0.3em;
+    padding: 0em 0.5em;
+}
+
+.quantity-button {
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.quantity-icons {
+    font-size: 1.1rem !important;
+    color: #808080;
+}
+
+.card-horizontal .card-footer {
+    padding: 0;
+}
+
+.card-primary-buttons-container {
+    width: 100%;
+    border-top: 1px solid #808080;
+}
+
+.card-primary-buttons-container .card-button {
+    width: 65%;
+    background-color: transparent;
+    border-radius: 0;
+    color: #808080;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    font-family: "Roboto", sans-serif;
+
+    /* flex properties */
+    display: flex;
+    justify-content: center;
+}
+
+.card-primary-buttons-container .card-button:nth-child(1) {
+    width: 35%;
+    border-right: 1px solid #808080;
+}
+
+.price-modal {
+    grid-area: price-dialog;
+    justify-self: start;
+}
+
+.modal {
+    max-width: 95%;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.confirmation-modal .modal-body {
+    align-items: unset;
+}
+
+.confirmation-modal .modal-body .modal-text {
+    width: max-content;
+    padding-left: 0;
+    cursor: default;
+}
+
+.modal-text:hover {
+    background-color: transparent;
+}
+
+.money-details {
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.highlight-item {
+    color: var(--secondary-color);
+}
+
+.divider-line {
+    width: 100%;
+    color: #ececec;
+    margin: 0;
+}
+
+.total-amount {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.modal-buttons-container {
+    justify-content: center;
+}
+
+.modal-buttons-container .modal-button {
+    background-color: var(--secondary-color);
+    border-radius: 0.3em;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-buttons-container .modal-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 950px) {
+    :root {
+        --modal-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    /* :root {
+        --modal-width: 20rem;
+    } */
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "nav" "cart-content" "price-dialog";
+    }
+
+    .price-modal {
+        justify-self: center;
+        margin-bottom: 2rem;
+    }
+
+    .modal {
+        margin: 0 auto;
+    }
 }
