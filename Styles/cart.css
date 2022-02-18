@@ -1,7 +1,7 @@
 /* change in nav bar */
 
 .navigation .button.button-warn {
-    margin: 0;
+    margin-left: 0.2em;
 }
 
 /* main-content */
@@ -144,7 +144,7 @@ button {
 
 .quantity-icons {
     font-size: 1.1rem !important;
-    color: #808080;
+    color: #475569;
 }
 
 .card-horizontal .card-footer {
@@ -153,6 +153,7 @@ button {
 
 .card-primary-buttons-container {
     width: 100%;
+    gap: 0;
     border-top: 1px solid #808080;
 }
 
@@ -217,7 +218,8 @@ button {
 
 .divider-line {
     width: 100%;
-    color: #ececec;
+    border-style: dashed;
+    color: #000;
     margin: 0;
 }
 
@@ -249,10 +251,6 @@ button {
 }
 
 @media screen and (max-width: 720px) {
-    /* :root {
-        --modal-width: 20rem;
-    } */
-
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-areas: "nav" "cart-content" "price-dialog";

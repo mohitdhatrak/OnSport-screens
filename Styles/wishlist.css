@@ -1,3 +1,11 @@
+/* change in nav bar */
+
+.navigation .button.button-warn {
+    margin-left: 0.2em;
+}
+
+/* main content */
+
 ul {
     margin: 0;
 }
@@ -25,6 +33,11 @@ button {
     --card-badge-bg-color: var(--primary-color);
     --card-badge-border: 1px solid #000;
     --card-badge-border-radius: 0.5em;
+    /* rating stars css variables */
+    --rating-outline-icon-color: #808080;
+    --rating-outline-icon-size: 1rem;
+    --rating-outline-icon-hover-color: #808080;
+    --rating-outline-gap-between: 0;
 }
 
 .main-content {
@@ -69,6 +82,24 @@ button {
     right: 0.4em;
 }
 
+.card-rating {
+    margin: 0;
+    margin-top: 0.6em;
+    margin-bottom: -0.4em;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #808080;
+}
+
 .card-badge {
     top: 0.5em;
     left: 0.5em;
@@ -110,11 +141,6 @@ button {
     display: flex;
     align-items: center;
     gap: 0.6em;
-}
-
-.vertical-line {
-    border-left: 2px solid #000;
-    height: 4rem;
 }
 
 @media screen and (max-width: 515px) {

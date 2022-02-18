@@ -73,6 +73,7 @@ a {
 .navigation-button {
     border-radius: 0.3em;
     border: 1px solid #000;
+    gap: 0.3em;
 }
 
 .navigation-button:focus {
@@ -86,7 +87,7 @@ a {
 .navigation .button.button-secondary {
     font-size: 1.3rem;
     padding: 0.4em 0;
-    margin-left: 0.8em;
+    margin-left: 0.5em;
 }
 
 .button.button-secondary:hover {
@@ -95,7 +96,7 @@ a {
 
 .navigation .button.button-warn {
     font-size: 1.3rem;
-    padding: 0.4em 0;
+    padding: 0.3em 0;
     margin-left: 0.8em;
 }
 
@@ -116,7 +117,7 @@ a {
     /* flex-properties */
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.3em;
 }
 
 .badge-button:hover {
@@ -134,7 +135,7 @@ a {
 }
 
 .login-signup-link {
-    padding: 0.4em 0.6em;
+    padding: 0.3em 0.6em;
 }
 
 .button.button-warn .login-signup-link {
