@@ -124,7 +124,7 @@ button {
     --card-secondary-button-border-radius: 0.5em;
     --card-button-hover-color: #7dd3fc;
     --card-icon-size: 1.3rem;
-    --card-badge-bg-color: var(--primary-color);
+    --card-badge-bg-color: #fef08a;
     --card-badge-border: 1px solid #000;
     --card-badge-border-radius: 0.5em;
     /* rating stars css variables */
