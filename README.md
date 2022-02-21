@@ -35,8 +35,9 @@ OnSport is an e-commerce website for sports merchandise. All the screens of the 
 HTML, Vanilla CSS and [my component library](https://spark-ui.netlify.app/)
 
 ### Features:
-  - All screens are responsive.
-  - Appropriate color constrast ratio, website keyboard accessible.
+  - All screens are fully responsive.
+  - Appropriate color constrast ratio, tested for constrast issues.
+  - All interactive elements are keyboard accessible.
   - Used meta tags with author-name, description, title and keywords.
   - Used semantic HTML tags for better accessibility.
 
