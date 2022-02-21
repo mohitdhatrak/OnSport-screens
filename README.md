@@ -5,7 +5,7 @@
 ### About
 OnSport is an e-commerce website for sports merchandise. All the screens of the website are fully responsive. To view the screens, click [here](https://onsport-screens.netlify.app/)
 
-### Few Screenshots:
+### Screenshots:
 
 ![image](https://user-images.githubusercontent.com/91209576/154887271-1ececdfc-0a4a-4f47-abd1-11c9065ce769.png)
 ![image](https://user-images.githubusercontent.com/91209576/154887466-f27d3ece-17f9-4515-aee5-ee0a30bcafff.png)
@@ -19,9 +19,9 @@ HTML, Vanilla CSS and [my component library](https://spark-ui.netlify.app/)
 
 ### Features:
   - All screens are responsive.
-  - Appropriate color constrast ratio, keyboard accessible
-  - Used meta tags with author-name, description, title and keywords
-  - Used semantic HTML tags for better accessibility
+  - Appropriate color constrast ratio, website keyboard accessible.
+  - Used meta tags with author-name, description, title and keywords.
+  - Used semantic HTML tags for better accessibility.
 
 ### Things I want to add or improve
 - Improve few CSS effects
