@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fc127183-ffd3-4da9-b065-c531d0a65c8e/deploy-status)](https://app.netlify.com/sites/onsport-screens/deploys)
 
 ### About
-OnSport is an e-commerce website for sports merchandise. All the screens of the website are fully responsive. To view the screens, click [here](https://onsport-screens.netlify.app/)
+OnSport is an e-commerce website for sports merchandise. All the screens of the website are fully responsive. To view the screens, click [here](https://onsport-screens.netlify.app/) <a href="https://onsport-screens.netlify.app/">here</a>
 
 ### Screenshots:
 
@@ -15,7 +15,7 @@ OnSport is an e-commerce website for sports merchandise. All the screens of the 
 ![image](https://user-images.githubusercontent.com/91209576/154887598-9916469a-202f-4dc6-bee0-372fafe3aa34.png)
 
 ### Tech Stack:
-HTML, Vanilla CSS and [my component library](https://spark-ui.netlify.app/){target="_blank"}
+HTML, Vanilla CSS and [my component library](https://spark-ui.netlify.app/)
 
 ### Features:
   - All screens are responsive.
