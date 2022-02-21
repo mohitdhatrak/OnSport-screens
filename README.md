@@ -15,7 +15,7 @@ OnSport is an e-commerce website for sports merchandise. All the screens of the 
 ![image](https://user-images.githubusercontent.com/91209576/154887598-9916469a-202f-4dc6-bee0-372fafe3aa34.png)
 
 ### Tech Stack:
-HTML, Vanilla CSS and [my component library](https://spark-ui.netlify.app/)
+HTML, Vanilla CSS and [my component library](https://spark-ui.netlify.app/){target="_blank"}
 
 ### Features:
   - All screens are responsive.
